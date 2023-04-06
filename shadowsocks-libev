@@ -19,7 +19,7 @@ MANAGER_ADDRESS="/var/run/ss-manager.socks"
 DAEMON_ARGS=
 
 # User and group to run the server as
-USER=ssuer
+USER=root
 GROUP=nogroup
 
 # Number of maximum file descriptors

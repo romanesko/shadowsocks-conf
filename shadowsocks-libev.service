@@ -11,7 +11,7 @@ DynamicUser=true
 EnvironmentFile=/etc/default/shadowsocks-libev
 LimitNOFILE=32768
 WorkingDirectory=/root/.shadowsocks
-ExecStart=/usr/bin/ss-manager -c $CONFFILE -u --manager-address $MANAGER_ADDRESS $DAEMON_ARGS
+ExecStart=/usr/bin/ss-manager -c $CONFFILE -u -a root --manager-address $MANAGER_ADDRESS $DAEMON_ARGS
 
 [Install]
 WantedBy=multi-user.target
