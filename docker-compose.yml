@@ -4,3 +4,4 @@ services:
     container_name: shadow
     build: .
     network_mode: host
+  
