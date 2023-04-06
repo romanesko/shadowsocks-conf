@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-ss-manager -k `uuidgen` -m aes-256-gcm -u --fast-open --reuse-port --manager-address /var/run/ss-manager.socks
+ss-manager -k `uuidgen` -m aes-256-gcm -u --fast-open --reuse-port --manager-address /var/run/ss-manager.socks &
+python3 worker.py
+
