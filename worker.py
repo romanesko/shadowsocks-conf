@@ -39,6 +39,7 @@ def sync(items_to_add, items_to_remove):
         s.connect(SERVER_SOCK)
 
         def send(cmd: str):
+            print(cmd)
             s.send(cmd.encode("utf-8"))
             resp = s.recv(1506).decode("utf-8")
             if resp != 'ok':
