@@ -2,8 +2,5 @@ version: "3.3"
 services:
   shadow:
     container_name: shadow
-    build:
-      context: .
-      args:
-        DOCKER_BUILDKIT: 1
+    build: .
     network_mode: host
