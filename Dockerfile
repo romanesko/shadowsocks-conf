@@ -9,6 +9,7 @@ WORKDIR /app
 COPY shadowsocks_manager.py /app
 RUN chmod +x /app/shadowsocks_manager.py
 COPY entrypoint.sh /app
+COPY worker.py /app
 RUN chmod +x /app/entrypoint.sh
 ENV PATH="$PATH:/app"
 ENTRYPOINT [ "./entrypoint.sh"]
