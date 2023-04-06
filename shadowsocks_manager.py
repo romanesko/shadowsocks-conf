@@ -51,7 +51,7 @@ with socket.socket(socket.AF_UNIX, socket.SOCK_DGRAM) as s:
     s.send(cmd.encode("utf-8"))
     resp = s.recv(1506).decode("utf-8")
     if resp != 'ok':
-      print('ERROR:', respfile=sys.stderr)
+      print('ERROR:', file=sys.stderr)
       exit(1)
 
   for item in items_to_add:
