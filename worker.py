@@ -50,6 +50,7 @@ def sync(items_to_add, items_to_remove):
             print('+', item[0])
             cmd = f"remove: {json.dumps({'server_port': item[0]})}"
             send(cmd)
+            sleep(1)
             cmd = f"add: {json.dumps({'server_port': item[0], 'password': item[1]})}"
             send(cmd)
 
